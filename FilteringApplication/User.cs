@@ -1,4 +1,6 @@
-﻿namespace FilteringApplication
+﻿using System.Data.Entity.Infrastructure;
+
+namespace FilteringApplication
 {
     public class User
     {
