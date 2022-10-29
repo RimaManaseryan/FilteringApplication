@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity.Infrastructure;
 
-namespace FilteringApplication
+namespace FilteringApplication.models
 {
     public class User
     {

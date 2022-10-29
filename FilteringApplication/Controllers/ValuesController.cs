@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.Mime.MediaTypeNames;
 using System.Data.Entity;
+using FilteringApplication.models;
 
 namespace FilteringApplication.Controllers
 {
@@ -29,6 +30,7 @@ namespace FilteringApplication.Controllers
                 FilteredUsers = FilteredUsers.Where(u => u.Age == testi.Age).ToList();
             if (testi.Course.HasValue)
                 FilteredUsers = FilteredUsers.Where(u => u.Course == testi.Course).ToList();
+
             return FilteredUsers.Any() ? Ok(FilteredUsers) : NoContent();
         }
     }
